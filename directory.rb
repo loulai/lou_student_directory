@@ -1,23 +1,30 @@
 puts "The students of my cohort at Makers Academy"
-puts "---------"
-puts "Daniel Le Dosquet - Bergquist"
-puts "Steve Musgrave"
-puts "Sroop Sunar"
-puts "Colin Marshall"
-puts "Josh Fail-Brown"
-puts "Louise Lai"
-puts "Robin Doble"
-puts "Alex Wong"
-puts "Scott Dimmock"
-puts "Muhanad Al-Rubaiee"
-puts "Shelley Hope"
-puts "Will Hall"
-puts "Oliver Delevingne"
-puts "Nico Saueressig"
-puts "Apostolis"
-puts "Stefania Cardenas"
-puts "Robert Leon"
-puts "Emma Williams"
-puts "Joey Wolf"
-puts "Julie Walker"
-print "Overall, we have 20 great students"
+
+students = [
+
+"Daniel Le Dosquet - Bergquist",
+"Steve Musgrave",
+"Sroop Sunar",
+"Colin Marshall",
+"Josh Fail-Brown",
+"Louise Lai",
+"Robin Doble",
+"Alex Wong",
+"Scott Dimmock",
+"Muhanad Al-Rubaiee",
+"Shelley Hope",
+"Will Hall",
+"Oliver Delevingne",
+"Nico Saueressig",
+"Apostolis",
+"Stefania Cardenas",
+"Robert Leon",
+"Emma Williams",
+"Joey Wolf",
+"Julie Walker"
+]
+
+students.each {|student| puts student }
+
+ 
+puts "Overall, we have #{students.length} students."
