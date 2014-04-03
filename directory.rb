@@ -1,26 +1,26 @@
 
 students = [
 
-["Daniel Le Dosquet - Bergquist", :march],
-["Steve Musgrave",:march],
-["Sroop Sunar",:march],
-["Colin Marshall",:march],
-["Josh Fail-Brown",:march],
-["Louise Lai",:march],
-["Robin Doble",:march],
-["Alex Wong",:march],
-["Scott Dimmock",:march],
-["Muhanad Al-Rubaiee",:march],
-["Shelley Hope",:march],
-["Will Hall",:march],
-["Oliver Delevingne",:march],
-["Nico Saueressig",:march],
-["Apostolis",:march],
-["Stefania Cardenas",:march],
-["Robert Leon",:march],
-["Emma Williams",:march],
-["Joey Wolf",:march],
-["Julie Walker", :march]
+{name: "Daniel Le Dosquet - Bergquist", cohort: :March},
+{name: "Steve Musgrave", cohort: :March},
+{name: "Sroop Sunar",  cohort: :March},
+{name: "Colin Marshall", cohort: :March},
+{name: "Josh Fail-Brown", cohort: :March},
+{name: "Louise Lai", cohort: :March},
+{name: "Robin Doble", cohort: :March},
+{name: "Alex Wong", cohort: :March},
+{name: "Scott Dimmock", cohort: :March},
+{name: "Muhanad Al-Rubaiee", cohort: :March},
+{name: "Shelley Hope", cohort: :March},
+{name: "Will Hall", cohort: :March},
+{name: "Oliver Delevingne", cohort: :March},
+{name: "Nico Saueressig", cohort: :March},
+{name: "Apostolis", cohort: :March},
+{name: "Stefania Cardenas", cohort: :March},
+{name: "Robert Leon", cohort: :March},
+{name: "Emma Williams", cohort: :March},
+{name: "Joey Wolf", cohort: :March},
+{name: "Julie Walker", cohort: :March}
 ]
 
 def print_header
@@ -30,7 +30,7 @@ end
 
 def print (students)
 	students.each do |student| 
-		puts " #{student[0]} - #{student[1]} cohort"
+		puts " #{student[:name]} (#{student[:cohort]} cohort)"
 	end
 
 end
