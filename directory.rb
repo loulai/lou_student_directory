@@ -1,26 +1,26 @@
 
 students = [
 
-"Daniel Le Dosquet - Bergquist",
-"Steve Musgrave",
-"Sroop Sunar",
-"Colin Marshall",
-"Josh Fail-Brown",
-"Louise Lai",
-"Robin Doble",
-"Alex Wong",
-"Scott Dimmock",
-"Muhanad Al-Rubaiee",
-"Shelley Hope",
-"Will Hall",
-"Oliver Delevingne",
-"Nico Saueressig",
-"Apostolis",
-"Stefania Cardenas",
-"Robert Leon",
-"Emma Williams",
-"Joey Wolf",
-"Julie Walker"
+["Daniel Le Dosquet - Bergquist", :march],
+["Steve Musgrave",:march],
+["Sroop Sunar",:march],
+["Colin Marshall",:march],
+["Josh Fail-Brown",:march],
+["Louise Lai",:march],
+["Robin Doble",:march],
+["Alex Wong",:march],
+["Scott Dimmock",:march],
+["Muhanad Al-Rubaiee",:march],
+["Shelley Hope",:march],
+["Will Hall",:march],
+["Oliver Delevingne",:march],
+["Nico Saueressig",:march],
+["Apostolis",:march],
+["Stefania Cardenas",:march],
+["Robert Leon",:march],
+["Emma Williams",:march],
+["Joey Wolf",:march],
+["Julie Walker", :march]
 ]
 
 def print_header
@@ -28,8 +28,10 @@ def print_header
 	puts "------------"
 end
 
-def print (names)
-	names.each {|name| puts name }
+def print (students)
+	students.each do |student| 
+		puts " #{student[0]} - #{student[1]} cohort"
+	end
 
 end
 
